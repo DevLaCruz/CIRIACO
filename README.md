@@ -22,7 +22,7 @@
 
 ## 🌹 Dedicatoria Especial / In Memoriam
 
-> **En homenaje al Profesor Ciriaco Carrasco**
+> **En homenaje al Profesor Ciriaco De La Cruz**
 > 
 > *Este proyecto lleva con orgullo el nombre de mi amado padre, Ciriaco, un abnegado profesor de educación primaria quien dedicó su vida a sembrar con paciencia, amor y rigor la semilla de la curiosidad y el conocimiento en generaciones de niños.*
 > 
