@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIRIACO | Sistema de Representación del Conocimiento Científico (DAG & IA)</title>
+  <meta name="description" content="CIRIACO: Conocimiento Integrado, Reutilizable, Indexado, Atómico, Colaborativo y Organizado. Sistema de Grafos Aclíclicos Dirigidos (DAG) y Verificación Semántica para el GICDIAC - UNPRG.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="container nav-bar">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="CIRIACO Icon">
+        <span class="brand-text">CIRIACO</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#dedicatoria">In Memoriam</a></li>
+        <li><a href="#arquitectura-dag">Grafo DAG</a></li>
+        <li><a href="#wysiwym">Editor WYSIWYM</a></li>
+        <li><a href="#metricas">Métricas</a></li>
+        <li><a href="#contacto" class="btn-contact">Contacto B2B</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-logo-wrapper">
+        <img src="assets/logo_typography.png" alt="CIRIACO Logo Completo" class="hero-logo">
+      </div>
+      <div class="hero-subtitle">GICDIAC — UNPRG | Tesis de Titulación Profesional</div>
+      <h1 class="hero-title">Sistema de Representación, Trazabilidad y Reutilización del Conocimiento Científico mediante Grafos Aclíclicos Dirigidos (DAG)</h1>
+      <p class="hero-description">
+        Una arquitectura inmutable de granularidad fina desacoplada de la capa tipográfica y articulada con agentes de verificación semántica y módulos Atmo-Native Graph-RAG.
+      </p>
+
+      <div class="hero-tags">
+        <span class="tag">Grafo DAG G=(V,E)</span>
+        <span class="tag">Sellado SHA-256</span>
+        <span class="tag">W3C PROV-O</span>
+        <span class="tag">Editor WYSIWYM</span>
+        <span class="tag">Graph-RAG</span>
+        <span class="tag">Diseño O1 ➔ X ➔ O2</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dedicatoria / In Memoriam Section -->
+  <section id="dedicatoria" class="dedication-section">
+    <div class="container">
+      <div class="dedication-card">
+        <div class="dedication-badge">
+          <span>🌹 IN MEMORIAM — HOMENAJE DE CUMPLEAÑOS</span>
+        </div>
+        <h2 class="dedication-title">En Honor al Profesor Ciriaco Carrasco</h2>
+        <p class="dedication-text">
+          Este proyecto científico lleva con profundo orgullo y gratitud el nombre de mi amado padre, <strong>Ciriaco</strong>, un abnegado profesor de educación primaria quien dedicó su vida a sembrar con paciencia, amor y rigor la semilla del saber en generaciones de niños.
+          Hoy, en la fecha de su cumpleaños, esta tesis rinde homenaje a su eterno legado, transformando el conocimiento científico en un bien estructurado, reutilizable y accesible para la ciencia y la sociedad.
+        </p>
+        <p class="dedication-quote">
+          "La educación es el arte de hacer permanente la luz del conocimiento."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive DAG Graph Visualizer -->
+  <section id="arquitectura-dag" class="dag-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Motor del Grafo Aclíclico Dirigido $G = (V, E)$</h2>
+        <p class="section-desc">Selecciona un vértice de Objeto Atómico (`Atmo`) en el grafo para auditar su linaje $W3C\ PROV\text{-}O$ y su sellado criptográfico $\text{SHA-256}$.</p>
+      </div>
+
+      <div class="dag-interactive-container">
+        <div class="dag-visualizer">
+          <svg id="dag-svg"></svg>
+        </div>
+
+        <div class="node-info-panel">
+          <div>
+            <div class="panel-title">Auditor de Objeto Atómico</div>
+            <div class="info-item">
+              <div class="info-label">Identificador del Atmo</div>
+              <div class="info-value" id="info-id">V1 (Hipótesis)</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Tipología Semántica</div>
+              <div class="info-value" id="info-type">Hypothesis</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Autor / Investigador</div>
+              <div class="info-value" id="info-author">Dante Carrasco</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Contenido Semántico</div>
+              <div class="info-value" id="info-content">"Cargando..."</div>
+            </div>
+            <div class="info-item">
+              <div class="info-label">Linaje / Padres (PROV-O)</div>
+              <div class="info-value" id="info-parents">Ninguno</div>
+            </div>
+          </div>
+          <div>
+            <div class="info-label">Sellado Criptográfico (SHA-256)</div>
+            <div class="hash-badge" id="info-hash">e3b0c44298fc1c149...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WYSIWYM Preview Section -->
+  <section id="wysiwym" class="wysiwym-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Interfaz WYSIWYM & Compilación Dinámica</h2>
+        <p class="section-desc">Desacoplamiento estricto entre la edición lógica estructurada y la compilación en tiempo real hacia formatos IEEE y APA 7ma edición.</p>
+      </div>
+
+      <div class="tab-container">
+        <div class="tab-header">
+          <button class="tab-btn active" data-tab="editor">Editor WYSIWYM (Lógico)</button>
+          <button class="tab-btn" data-tab="ieee">Live Preview IEEE (2 Col)</button>
+          <button class="tab-btn" data-tab="apa">Live Preview APA 7ma (1 Col)</button>
+        </div>
+        <div class="tab-content" id="tab-display-content">
+          <div class="editor-mock">
+            <div class="atmo-list">
+              <div class="atmo-item active">Atmo #101 [Hipótesis]</div>
+              <div class="atmo-item">Atmo #102 [Metodología]</div>
+              <div class="atmo-item">Atmo #103 [Resultado]</div>
+            </div>
+            <div class="editor-box">
+              <h4 style="color:var(--primary-cyan); margin-bottom:12px;">Editor de Objeto Atómico (WYSIWYM)</h4>
+              <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:16px;">Modificando bloque semántico sin preocuparse por márgenes o fuentes:</p>
+              <div style="background:#050811; padding:16px; border-radius:6px; font-family:var(--font-mono); font-size:0.85rem; color:#e2e8f0;">
+                El desarrollo e implementación de un sistema inteligente basado en versionado atómico e inmutabilidad SHA-256 optimizará la producción científica en el GICDIAC-UNPRG.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scientific Metrics Section -->
+  <section id="metricas" style="padding: 60px 0;">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Métricas de Desempeño y Validación Empírica</h2>
+        <p class="section-desc">Resultados esperados de la evaluación preexperimental ($O_1 \rightarrow X \rightarrow O_2$) en el GICDIAC.</p>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">+42%</div>
+          <div class="metric-label">Tasa de Reutilización ($F_R$)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">100%</div>
+          <div class="metric-label">Trazabilidad Criptográfica ($I_{CT}$)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">ΔS ≈ 0</div>
+          <div class="metric-label">Deriva Semántica Controlada</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">> 85</div>
+          <div class="metric-label">Puntaje Usabilidad Escala SUS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Licensing Section -->
+  <section id="contacto" style="padding: 70px 0;">
+    <div class="container">
+      <div class="dedication-card" style="background: linear-gradient(135deg, rgba(0, 242, 254, 0.08), rgba(15, 23, 42, 0.95)); border-color: rgba(0, 242, 254, 0.3);">
+        <h2 class="section-title" style="margin-bottom:14px;">Transferencia Tecnológica & Licenciamiento B2B</h2>
+        <p class="section-desc" style="margin-bottom:24px; color:#e2e8f0;">
+          El Core Engine de CIRIACO está disponible para licenciamiento institucional e integración con sistemas de Inteligencia Artificial corporativos mediante APIs Atmo-Native Graph-RAG bajo modelos de Innovación Abierta.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:20px; font-family:var(--font-mono); font-size:0.9rem; color:var(--primary-cyan);">
+          <div><strong>Investigador:</strong> Ing. William Dante Carrasco Angulo</div>
+          <div><strong>Email:</strong> wcarrascoa@unprg.edu.pe</div>
+          <div><strong>Laboratorio:</strong> GICDIAC — FICSA / UNPRG</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>CIRIACO © 2025 — Desarrollado con devoción científica en el Grupo de Investigación GICDIAC, UNPRG (Chiclayo, Perú).</p>
+      <p style="font-size:0.8rem; margin-top:8px; color:var(--text-muted);">En memoria eterna del Profesor Ciriaco Carrasco.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
