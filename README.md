@@ -102,7 +102,7 @@ El proyecto CIRIACO promueve la **Innovación Abierta** y la articulación unive
 
 Para solicitudes de licenciamiento empresarial, integración de APIs Graph-RAG o proyectos conjuntos de I+D+, contactar al equipo de investigación:
 
-* **Autor / Investigador:** Ing. William Dante Carrasco Angulo (`wcarrascoa@unprg.edu.pe`)
+* **Autor / Investigador:** Bach. Alejandro De La Cruz (`adelacruzsu@unprg.edu.pe`)
 * **Asesor de Investigación:** M.Sc. Juan Elías Villegas Cubas
 * **Institución:** Universidad Nacional Pedro Ruiz Gallo — FICSA / GICDIAC
 * **Ubicación:** Chiclayo, Lambayeque, Perú
